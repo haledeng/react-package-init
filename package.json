@@ -4,7 +4,7 @@
   "description": "A tool for develop npm package",
   "scripts": {
     "build": "babel src --out-dir bin",
-    "dev": "npm run build && npm link && pkg init test",
+    "dev": "npm run build && npm link && reactpkg init aaa",
     "release": "node scripts/release.js",
     "test": "cross-env NODE_ENV=test mocha --compilers js:babel-register --recursive  --require ./test/setup.js"
   },

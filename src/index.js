@@ -17,7 +17,7 @@ const commands = [{
 
 
 const startCommand = (name, args) => {
-	let p = fork(require.resolve(`./${name}`));
+	let p = fork(require.resolve(`./${name}`), args);
 	p.on('message', (msg) => {
 		if (data === 'RESTART') {
 			p.kill('SIGINT');
@@ -38,4 +38,6 @@ for (const {
 		})
 }
 
+const name = require('minimist')(process.argv.slice(0));
+console.log(name);
 commander.parse(process.argv);

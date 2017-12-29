@@ -3,8 +3,15 @@ import copydir from 'copy-dir'
 
 import path from 'path';
 
+import {
+	rename
+} from 'fs';
+
+let cwd = process.cwd();
+
 const init = () => {
-	copydir.sync(path.join(__dirname, '../template'), path.join(process.cwd(), name));
+	copydir.sync(path.join(__dirname, '../template'), path.join(cwd, name));
+	rename(path.join(cwd, name, '.ignore'), path.join(cwd, name, '.npmignore'));
 }
 
 init();
