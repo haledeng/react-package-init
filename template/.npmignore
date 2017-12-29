@@ -1,0 +1,8 @@
+node_modules
+scripts
+test
+npm-debug.log
+rollup.config.js
+todolist.md
+.gitlab-ci.yml
+.babelrc
