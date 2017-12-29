@@ -38,6 +38,4 @@ for (const {
 		})
 }
 
-const name = require('minimist')(process.argv.slice(0));
-console.log(name);
 commander.parse(process.argv);
