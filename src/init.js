@@ -13,7 +13,7 @@ let cwd = process.cwd();
 
 const init = () => {
 	copydir.sync(path.join(__dirname, '../template'), path.join(cwd, name));
-	renameIgnore();
+	// renameIgnore();
 };
 
 
