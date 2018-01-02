@@ -9,7 +9,6 @@ if (version) {
 		.exec(`node scripts/version ${version}`)
 		.exec(`git add package.json`)
 		.exec(`git commit -m "build(release):release ${version}"`)
-		.exec(`git tag v${version}`)
 		.exec(`git push`)
 } else {
 	console.warn('You must assign version info like this： npm run release x.x.x')
