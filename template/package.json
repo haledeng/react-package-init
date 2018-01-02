@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "build:commonjs": "rollup -c -o lib/index.js",
     "build:umd": "rollup -c -o dist/index.js",

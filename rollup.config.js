@@ -11,7 +11,7 @@ const config = {
   output: {
     format: 'umd'
   },
-  name: 'pkg',
+  name: 'reactpkg',
   plugins: [
     nodeResolve(),
     babel({

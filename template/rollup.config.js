@@ -19,7 +19,7 @@ const config = {
   output: {
     format: 'umd'
   },
-  name: 'redux-promo',
+  name: '<%=name%>',
   plugins: [
     nodeResolve(),
     babel({
