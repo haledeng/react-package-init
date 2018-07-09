@@ -1,4 +1,5 @@
 const name = require('minimist')(process.argv.slice(2))._[0];
+
 import copydir from 'copy-dir'
 
 import path from 'path';
